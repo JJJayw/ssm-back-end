@@ -1,6 +1,5 @@
 package org.jay.controller;
 
-import jakarta.annotation.Resource;
 import org.jay.entity.Menu;
 import org.jay.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;

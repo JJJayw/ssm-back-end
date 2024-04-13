@@ -1,12 +1,10 @@
 package org.jay.entity;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serial;
-import java.util.Date;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 用户信息表(User)实体类

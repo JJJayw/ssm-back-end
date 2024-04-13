@@ -1,8 +1,6 @@
 package org.jay.entity;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serial;
 import java.io.Serializable;

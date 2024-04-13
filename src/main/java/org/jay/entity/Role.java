@@ -1,12 +1,10 @@
 package org.jay.entity;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serial;
-import java.util.Date;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 角色信息表(Role)实体类
