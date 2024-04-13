@@ -3,7 +3,7 @@ spring:
     name: druidDataSource
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
-      url: jdbc:mysql://172.23.240.125/ssm
+      url: jdbc:mysql://172.23.240.125/gl
       username: remote
       password: w88346090A
       initial-size: 5
@@ -24,3 +24,6 @@ spring:
           min-idle: 0     # 最小空闲连接，默认0
 server:
   port: 8088
+mybatis:
+  mapper-locations: classpath:mapper/*
+  type-aliases-package: org.jay.dao
