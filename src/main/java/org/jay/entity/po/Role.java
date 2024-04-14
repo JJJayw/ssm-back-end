@@ -1,4 +1,4 @@
-package org.jay.entity;
+package org.jay.entity.po;
 
 import lombok.Data;
 
