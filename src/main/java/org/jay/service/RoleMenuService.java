@@ -1,6 +1,6 @@
 package org.jay.service;
 
-import org.jay.entity.RoleMenu;
+import org.jay.entity.po.RoleMenu;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 

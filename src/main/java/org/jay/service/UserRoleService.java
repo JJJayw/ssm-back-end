@@ -1,6 +1,6 @@
 package org.jay.service;
 
-import org.jay.entity.UserRole;
+import org.jay.entity.po.UserRole;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 

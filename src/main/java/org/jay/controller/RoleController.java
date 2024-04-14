@@ -1,7 +1,7 @@
 package org.jay.controller;
 
 import jakarta.annotation.Resource;
-import org.jay.entity.Role;
+import org.jay.entity.po.Role;
 import org.jay.service.RoleService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

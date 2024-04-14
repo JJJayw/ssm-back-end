@@ -1,6 +1,7 @@
 package org.jay.service;
 
-import org.jay.entity.User;
+import org.jay.entity.dto.LoginUser;
+import org.jay.entity.po.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 
@@ -53,4 +54,13 @@ public interface UserService {
 	 */
 	boolean deleteById(Long userId);
 
+
+	/**
+	 * 使用用户名和密码登录
+	 *
+	 * @param userName 用户名
+	 * @param password 密码
+	 * @return 登录实例
+	 */
+	LoginUser login(String userName, String password);
 }

@@ -2,7 +2,8 @@ package org.jay.service.impl;
 
 import jakarta.annotation.Resource;
 import org.jay.dao.UserDao;
-import org.jay.entity.User;
+import org.jay.entity.dto.LoginUser;
+import org.jay.entity.po.User;
 import org.jay.service.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -78,5 +79,17 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public boolean deleteById(Long userId) {
 		return this.userDao.deleteById(userId) > 0;
+	}
+
+	@Override
+	public LoginUser login(String userName, String password) {
+//		1. 使用用户名查询用户，没有查询到，说明没有该用户
+//		2. 如果查到了。比较密码，密码如果不正确，登录失败
+//		3. 如果验证成功了，
+//		    （1）生成token
+//		    （2）封装一个登录用户LoginUser，保存在redis
+//
+
+		return null;
 	}
 }

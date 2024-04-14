@@ -1,7 +1,7 @@
 package org.jay.controller;
 
 import jakarta.annotation.Resource;
-import org.jay.entity.User;
+import org.jay.entity.po.User;
 import org.jay.service.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

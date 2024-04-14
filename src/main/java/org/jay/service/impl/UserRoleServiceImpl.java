@@ -2,7 +2,7 @@ package org.jay.service.impl;
 
 import jakarta.annotation.Resource;
 import org.jay.dao.UserRoleDao;
-import org.jay.entity.UserRole;
+import org.jay.entity.po.UserRole;
 import org.jay.service.UserRoleService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

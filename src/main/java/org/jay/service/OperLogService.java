@@ -1,6 +1,6 @@
 package org.jay.service;
 
-import org.jay.entity.OperLog;
+import org.jay.entity.po.OperLog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 

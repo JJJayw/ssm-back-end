@@ -2,7 +2,7 @@ package org.jay.service.impl;
 
 import jakarta.annotation.Resource;
 import org.jay.dao.OperLogDao;
-import org.jay.entity.OperLog;
+import org.jay.entity.po.OperLog;
 import org.jay.service.OperLogService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

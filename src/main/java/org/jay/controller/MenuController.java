@@ -1,6 +1,6 @@
 package org.jay.controller;
 
-import org.jay.entity.Menu;
+import org.jay.entity.po.Menu;
 import org.jay.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

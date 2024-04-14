@@ -2,7 +2,7 @@ package org.jay.service.impl;
 
 import jakarta.annotation.Resource;
 import org.jay.dao.MenuDao;
-import org.jay.entity.Menu;
+import org.jay.entity.po.Menu;
 import org.jay.service.MenuService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
