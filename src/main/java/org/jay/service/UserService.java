@@ -1,5 +1,6 @@
 package org.jay.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.jay.entity.dto.LoginUser;
 import org.jay.entity.po.User;
 import org.springframework.data.domain.Page;
@@ -62,5 +63,5 @@ public interface UserService {
 	 * @param password 密码
 	 * @return 登录实例
 	 */
-	LoginUser login(String userName, String password);
+	LoginUser login(String userName, String password) throws JsonProcessingException;
 }

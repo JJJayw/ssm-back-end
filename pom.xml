@@ -43,9 +43,16 @@
         <!--        德鲁伊数据连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-3-starter</artifactId>
-            <version>1.2.22</version>
+            <artifactId>druid</artifactId>
+            <version>1.1.10</version>
         </dependency>
+        <!--springboot整合druid-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>
+        <!--        lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -55,12 +62,35 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>io.lettuce</groupId>-->
+<!--                    <artifactId>lettuce-core</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+        </dependency>
+        <!--        jedis-->
+<!--        <dependency>-->
+        <!--            <groupId>redis.clients</groupId>-->
+        <!--            <artifactId>jedis</artifactId>-->
+        <!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
         <!--        spring测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <!--        UserAgentUtils-->
+
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>1.21</version>
         </dependency>
     </dependencies>
 

@@ -1,5 +1,8 @@
 package org.jay.entity.po;
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 import java.io.Serial;
@@ -23,6 +26,8 @@ public class User implements Serializable {
 	/**
 	 * 用户账号
 	 */
+	@NotNull
+	@Size(min = 5, max = 15, message = "用户名的长度应该在5~15之间")
 	private String userName;
 	/**
 	 * 用户昵称
@@ -35,6 +40,7 @@ public class User implements Serializable {
 	/**
 	 * 手机号码
 	 */
+	@Pattern(regexp = "/^1[3456789]\\d{9}$/")
 	private String phonenumber;
 	/**
 	 * 用户性别（0男 1女 2未知）
@@ -47,6 +53,8 @@ public class User implements Serializable {
 	/**
 	 * 密码
 	 */
+	@NotNull
+	@Size(min = 5, max = 15, message = "密码的长度应该在5~15之间")
 	private String password;
 	/**
 	 * 帐号状态（0正常 1停用）
