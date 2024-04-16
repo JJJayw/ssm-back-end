@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.jay.dao.UserDao">
 
-    <resultMap type="org.jay.entity.User" id="UserMap">
+    <resultMap type="org.jay.entity.po.User" id="UserMap">
         <result property="userId" column="user_id" jdbcType="INTEGER"/>
         <result property="userName" column="user_name" jdbcType="VARCHAR"/>
         <result property="nickName" column="nick_name" jdbcType="VARCHAR"/>
@@ -23,7 +23,7 @@
 
     <!--查询单个-->
     <select id="queryById" resultMap="UserMap">
-        select user_id,
+        SELECT user_id,
                user_name,
                nick_name,
                email,
@@ -39,8 +39,29 @@
                create_time,
                update_by,
                update_time
-        from user
-        where user_id = #{userId}
+        FROM user
+        WHERE user_id = #{userId}
+    </select>
+
+    <select id="queryByUserName" resultMap="UserMap">
+        SELECT user_id,
+               user_name,
+               nick_name,
+               email,
+               phonenumber,
+               sex,
+               avatar,
+               password,
+               status,
+               del_flag,
+               login_ip,
+               login_date,
+               create_by,
+               create_time,
+               update_by,
+               update_time
+        FROM user
+        WHERE user_name = #{userName}
     </select>
 
     <!--查询指定行数据-->
@@ -160,9 +181,9 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="userId" useGeneratedKeys="true">
-        insert into user(user_name, nick_name, email, phonenumber, sex, avatar, password, status, del_flag, login_ip,
+        INSERT INTO user(user_name, nick_name, email, phonenumber, sex, avatar, password, status, del_flag, login_ip,
                          login_date, create_by, create_time, update_by, update_time)
-        values (#{userName}, #{nickName}, #{email}, #{phonenumber}, #{sex}, #{avatar}, #{password}, #{status},
+        VALUES (#{userName}, #{nickName}, #{email}, #{phonenumber}, #{sex}, #{avatar}, #{password}, #{status},
                 #{delFlag}, #{loginIp}, #{loginDate}, #{createBy}, #{createTime}, #{updateBy}, #{updateTime})
     </insert>
 
@@ -259,9 +280,9 @@
 
     <!--通过主键删除-->
     <delete id="deleteById">
-        delete
-        from user
-        where user_id = #{userId}
+        DELETE
+        FROM user
+        WHERE user_id = #{userId}
     </delete>
 
 </mapper>

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.jay.dao.MenuDao">
 
-    <resultMap type="org.jay.entity.Menu" id="MenuMap">
+    <resultMap type="org.jay.entity.po.Menu" id="MenuMap">
         <result property="menuId" column="menu_id" jdbcType="INTEGER"/>
         <result property="menuName" column="menu_name" jdbcType="VARCHAR"/>
         <result property="perms" column="perms" jdbcType="VARCHAR"/>

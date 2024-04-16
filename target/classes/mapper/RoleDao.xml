@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.jay.dao.RoleDao">
 
-    <resultMap type="org.jay.entity.Role" id="RoleMap">
+    <resultMap type="org.jay.entity.po.Role" id="RoleMap">
         <result property="roleId" column="role_id" jdbcType="INTEGER"/>
         <result property="roleName" column="role_name" jdbcType="VARCHAR"/>
         <result property="roleTag" column="role_tag" jdbcType="VARCHAR"/>

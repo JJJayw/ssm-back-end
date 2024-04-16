@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.jay.dao.UserRoleDao">
 
-    <resultMap type="org.jay.entity.UserRole" id="UserRoleMap">
+    <resultMap type="org.jay.entity.po.UserRole" id="UserRoleMap">
         <result property="userId" column="user_id" jdbcType="INTEGER"/>
         <result property="roleId" column="role_id" jdbcType="INTEGER"/>
     </resultMap>
